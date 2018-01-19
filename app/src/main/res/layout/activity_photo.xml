@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.alirizasalihoglu.slidingpuzzle.PhotoActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="360dp"
+            android:layout_height="360dp"
+            android:layout_marginBottom="80dp"
+            android:layout_marginTop="120dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:background="@drawable/select_image"
+                android:foreground="@drawable/select_image"
+                android:onClick="clickImage"
+                android:tag="lena"
+                app:srcCompat="@drawable/lena" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:background="@drawable/select_image"
+                android:foreground="@drawable/select_image"
+                android:onClick="clickImage"
+                android:tag="lion"
+                app:srcCompat="@drawable/lion" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:background="@drawable/select_image"
+                android:foreground="@drawable/select_image"
+                android:onClick="clickImage"
+                android:tag="colesso"
+                app:srcCompat="@drawable/colesso" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:background="@drawable/select_image"
+                android:foreground="@drawable/select_image"
+                android:onClick="clickImage"
+                android:tag="cabinet"
+                app:srcCompat="@drawable/cabinet" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:background="@drawable/select_image"
+                android:foreground="@drawable/select_image"
+                android:onClick="clickImage"
+                android:tag="cabinet"
+                app:srcCompat="@drawable/cabinet" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:background="@drawable/select_image"
+                android:foreground="@drawable/select_image"
+                android:onClick="clickImage"
+                android:tag="donuts"
+                app:srcCompat="@drawable/donuts" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:background="@drawable/select_image"
+                android:foreground="@drawable/select_image"
+                android:onClick="clickImage"
+                android:tag="coffee"
+                app:srcCompat="@drawable/coffee" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:background="@drawable/select_image"
+                android:foreground="@drawable/select_image"
+                android:onClick="clickImage"
+                android:tag="butterflies"
+                app:srcCompat="@drawable/butterflies" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:background="@drawable/select_image"
+                android:foreground="@drawable/select_image"
+                android:onClick="clickImage"
+                android:tag="beetle"
+                app:srcCompat="@drawable/beetle" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_column="2"
+                android:layout_row="2"
+                android:background="@drawable/select_image"
+                android:foreground="@drawable/select_image"
+                android:onClick="clickImage"
+                android:tag="beetle" />
+
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginBottom="80dp"
+            android:gravity="center|end"
+            android:orientation="horizontal"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp">
+
+            <Button
+                android:id="@+id/galleryButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/gallery_icon"
+                android:onClick="clickGallery"
+                />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/cameraButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/camera_icon"
+                android:onClick="clickCamera" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1" />
+
+
+            <Button
+                android:id="@+id/goButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/go_icon"
+                android:onClick="clickGo" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

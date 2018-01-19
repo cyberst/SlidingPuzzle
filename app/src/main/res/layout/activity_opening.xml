@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alirizasalihoglu.slidingpuzzle.OpeningActivity"
+    android:background="@drawable/background"
+    >
+
+    <LinearLayout
+        android:id="@+id/screen_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_marginTop="35dp"
+            android:id="@+id/gameNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:text="SLIDING"
+            android:textSize="55sp"
+            android:textColor="@color/tw__composer_white"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/gameNameText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="10dp"
+            android:text="PUZZLE"
+            android:textSize="50sp"
+            android:textColor="@color/tw__composer_white"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/play_icon"
+            android:gravity="center"
+            android:onClick="clickPlay"
+            android:layout_marginTop="40dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/settings_icon"
+                android:gravity="center"
+                android:onClick="clickSettings" />
+
+            <TextView
+                android:id="@+id/text_greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tw__composer_red"
+                android:textStyle="bold"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/show_leaderboards_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/leaderboard_icon"
+                android:onClick="clickLeaderboard" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center|end"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginBottom="20dp"
+
+            >
+
+            <Button
+                android:id="@+id/sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickSignIn"
+                android:text="Sign IN"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/tw__composer_white"
+                android:background="?android:attr/selectableItemBackground"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/sign_out_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickSignOut"
+                android:text="@string/sign_out"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/tw__composer_white"
+                android:background="?android:attr/selectableItemBackground"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

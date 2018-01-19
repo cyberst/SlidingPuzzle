@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.alirizasalihoglu.slidingpuzzle.SettingsActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/settingsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="35dp"
+            android:text="Settings"
+            android:textColor="@color/tw__composer_white"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/puzzleSizeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/settingsTitle"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Puzzle Size"
+            android:textColor="@color/tw__composer_white"
+            android:textSize="25dp" />
+
+        <View
+            android:id="@+id/puzzleSizeTextBar"
+            android:layout_width="150dp"
+            android:layout_height="3dp"
+            android:layout_below="@id/puzzleSizeText"
+            android:layout_marginStart="20dp"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/puzzleSizeTextBar"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp">
+
+            <SeekBar
+                android:id="@+id/sizeSeekBar"
+                android:layout_width="245dp"
+                android:layout_height="48dp"
+                android:layout_alignStart="@+id/linearLayout3"
+                android:layout_alignTop="@+id/linearLayout3"
+                android:indeterminate="false"
+                android:max="2"
+                android:progress="1" />
+
+            <TextView
+                android:id="@+id/sizeText"
+                android:layout_width="52dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:textColor="@color/tw__composer_white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/shareText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/shareAppBar"
+            android:layout_marginStart="20dp"
+            android:text="Share App"
+            android:textColor="@color/tw__composer_white"
+            android:textSize="25dp" />
+
+        <View
+            android:id="@+id/shareAppBar"
+            android:layout_width="150dp"
+            android:layout_height="3dp"
+            android:layout_above="@id/shareAppLayout"
+            android:layout_marginStart="20dp"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:id="@+id/shareAppLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="200dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/shareAppFaceButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/facebook_icon"
+                android:onClick="clickShareFace"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="336dp" />
+
+            <Button
+                android:id="@+id/shareAppTwitButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/twitter_icon"
+                android:onClick="clickShareTwit"
+                tools:layout_editor_absoluteX="174dp"
+                tools:layout_editor_absoluteY="336dp" />
+
+            <Button
+                android:id="@+id/shareAppWpButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/whatsapp_icon"
+                android:onClick="clickShareWp"
+                tools:layout_editor_absoluteX="293dp"
+                tools:layout_editor_absoluteY="336dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:autoLink="web"
+            android:text="Some icons retrieved from www.flaticon.com"
+            android:textColor="@color/tw__composer_black"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

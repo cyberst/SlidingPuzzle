@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alirizasalihoglu.slidingpuzzle.WinActivity"
+    tools:layout_editor_absoluteY="81dp"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textCong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="CONGRATULATIONS"
+            android:textColor="@color/tw__composer_white"
+            android:textSize="35dp"
+            android:maxLines="1" />
+
+        <RelativeLayout
+            android:id="@+id/layoutMoves"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCong"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/textMoves"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tw__composer_white"
+                android:layout_marginStart="100dp"
+                android:text="Moves:" />
+
+            <TextView
+                android:id="@+id/moveCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tw__composer_white"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="right"
+                android:layout_marginEnd="100dp"
+                android:text="AAA" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutMoves"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/timeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tw__composer_white"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="right"
+                android:layout_marginEnd="100dp"
+                android:text="AAA" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutTime"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/textScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tw__composer_white"
+                android:layout_marginStart="100dp"
+                android:text="Score:" />
+
+            <TextView
+                android:id="@+id/scoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tw__composer_white"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="right"
+                android:layout_marginEnd="100dp"
+                android:text="BBB" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutScore"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/shareScoreFaceButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="clickShareTwit"
+                android:background="@drawable/facebook_icon" />
+
+            <Button
+                android:id="@+id/shareScoreTwitButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignRight="@+id/shareAppFaceButton"
+                android:layout_gravity="right"
+                android:layout_marginStart="150dp"
+                android:onClick="clickShareFace"
+                android:background="@drawable/twitter_icon"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/Ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Share"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:onClick="clickOk"
+                android:background="@drawable/ok_icon"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/layoutTime"
+            android:textColor="@color/tw__composer_white"
+            android:layout_alignBottom="@+id/layoutTime"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="102dp"
+            android:text="Time:" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
