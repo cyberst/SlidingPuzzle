@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="google_games_app_id">ENTER YOUR GOOGLE GAMES APP ID</string>
+    <string name="leaderboard_id">ENTER YOUR LEADERBOARD ID</string>
+
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">ENTER YOUR TWITTER CONSUMER KEY</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">ENTER YOUR TWITTER CONSUMER SECRET</string>
+    <string name="facebook_app_id">ENTER YOUR FACEBOOK APP ID</string>
+
+</resources>
